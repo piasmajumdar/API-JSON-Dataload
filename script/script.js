@@ -7,14 +7,14 @@ const person = {
     money: 34000
 }
 
-console.log(person, typeof person);
+// console.log(person, typeof person);
 
 // JSON -> JS object with Notation
 // JSON.stringify -> JSON
 // JSON.parse -> object
 
 const personJSON = JSON.stringify(person);
-console.log(personJSON, typeof personJSON);
+// console.log(personJSON, typeof personJSON);
 
 const parseJSON = JSON.parse(personJSON);
-console.log(parseJSON, typeof parseJSON);
+// console.log(parseJSON, typeof parseJSON);
