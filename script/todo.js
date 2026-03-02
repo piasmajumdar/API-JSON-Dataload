@@ -19,6 +19,7 @@ const displayTodo = (todos) => {
 
     // 2. create div and append it to UI parent
 
+    
     todos.forEach(todo => {
         const todoCard = document.createElement('div');
         todoCard.innerHTML = `
