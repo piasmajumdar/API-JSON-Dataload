@@ -42,4 +42,4 @@ const loadData = (posts) => {
 
 }
 
-loadPost();
+// loadPost();

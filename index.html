@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore API</title>
     <style>
-        #post-container{
+        #post-container,
+        #user-container {
             max-width: 1160px;
             margin: 30px auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             row-gap: 40px;
-            
+
         }
 
-        .post-card {
+        .post-card, .user-card {
             border: 2px solid #ddd;
             padding: 10px;
             border-radius: 10px;
@@ -34,16 +35,20 @@
 
     <button onclick="loadData()">Load Data</button>
     <button onclick="loadPost()">Load Post</button>
+    <button onclick="loadUser()">Load User</button>
 
-    <h1>All Posts</h1>
+    <!-- <h1>All Posts</h1> -->
 
     <div id="post-container">
+    </div>
 
+    <div id="user-container">
     </div>
 
     <script src="./script/script.js"></script>
     <!-- <script src="./script/fetch.js"></script> -->
     <script src="./script/posts.js"></script>
+    <script src="./script/user.js"></script>
 </body>
 
 </html>
