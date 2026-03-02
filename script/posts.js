@@ -10,21 +10,36 @@ const loadPost = () => {
 }
 
 
+// {
+//     "userId": 10,
+//     "id": 96,
+//     "title": "quaerat velit veniam amet cupiditate aut numquam ut sequi",
+//     "body": "in non odio excepturi sint eum\nlabore voluptates vitae quia qui et\ninventore itaque rerum\nveniam non exercitationem delectus aut"
+// }
 
+//               array of objects
 const loadData = (posts) => {
-
-    // 1. get the container
+    // 1. get the container and empty it
     const postContainer = document.getElementById('post-container');
+    postContainer.innerHTML = '';
 
     posts.forEach(post => {
-        // console.log(post.title);
+        console.log(post);
+        // 2. create div element
+        const postCard = document.createElement('div');
+        postCard.innerHTML = `
+        <div class="post-card">
+            <h2>${post.title}</h2>
+            <p>${post.body}</p>
+            </div>
+        `
 
-        // 2. create HTML element
-        const li = document.createElement('li');
-        li.innerText = post.title;
-        console.log(li);
+        // 3. append the card to parent
+        postContainer.appendChild(postCard);
 
-        // 3. add li into container
-        postContainer.appendChild(li);
+
     })
+
 }
+
+loadPost();
